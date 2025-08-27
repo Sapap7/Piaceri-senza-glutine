@@ -1,0 +1,38 @@
+<section id="home" class="hero">
+  <h1>Benvenuti da Piaceri Senza Glutine</h1>
+  <p>Scopri tutti i nostri prodotti senza glutine, freschi e genuini!</p>
+  <div class="offers">
+    <h2>Offerte del momento</h2>
+    <ul>
+      <li>10% di sconto su tutti i prodotti per il primo anno!</li>
+      <li>Acquistando 2 prodotti linea affettati Rovagnati, ricevi una mortadella in omaggio!</li>
+      <li>Farine Zero Problem in offerta lancio con sconto del 15%!</li>
+    </ul>
+  </div>
+  <button onclick="scrollToProducts()">Scopri i Prodotti</button>
+</section>
+const products = [
+  // Pane
+  { name: "Pane Fresco", price: 3.5, category: "Pane", image: "pane-fresco.jpg" },
+  { name: "Rusticone", price: 5, category: "Pane", image: "rusticone.jpg" },
+  { name: "Calzone alla Sorrentina", price: 6, category: "Pane", image: "calzone.jpg" },
+
+  // Dolci
+  { name: "Tortellini al Crudo", price: 7, category: "Dolci", image: "tortellini.jpg" },
+  { name: "Chococake", price: 8, category: "Dolci", image: "chococake.jpg" },
+  { name: "Crostatine Albicocca e Nocciola", price: 4, category: "Dolci", image: "crostatine.jpg" },
+  { name: "Bombe alla Crema", price: 3, category: "Dolci", image: "bombe.jpg" },
+  { name: "Zeppole", price: 3, category: "Dolci", image: "zeppole.jpg" },
+
+  // Salati
+  { name: "Piadina Romagnola", price: 3, category: "Salati", image: "piadina.jpg" },
+  { name: "Hamburger Rolls", price: 4, category: "Salati", image: "hamburger-rolls.jpg" },
+  { name: "Bagel", price: 4, category: "Salati", image: "bagel.jpg" },
+
+  // Snack
+  { name: "I TOBLIX® Classico", price: 2.5, category: "Snack", image: "toblix-classico.jpg" },
+  { name: "I TOBLIX® Paprika", price: 2.5, category: "Snack", image: "toblix-paprika.jpg" },
+  { name: "Biscotti Crunchy", price: 3, category: "Snack", image: "biscotti-crunchy.jpg" },
+  { name: "Ventaglietti di Sfoglia", price: 3, category: "Snack", image: "ventaglietti.jpg" },
+  { name: "Praline Diamanti", price: 5, category: "Snack", image: "praline.jpg" }
+];
